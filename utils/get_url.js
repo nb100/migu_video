@@ -2,7 +2,11 @@ import puppeteer from 'puppeteer';
 
 // 打开浏览器
 async function get_browser(path) {
-  return await puppeteer.launch();
+  return await puppeteer.launch({
+    args: [
+      "--no-sandbox"
+    ]
+  });
 }
 
 // 创建页面
