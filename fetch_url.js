@@ -54,7 +54,7 @@ async function fetch_url() {
     let data = datas[i].dataList
     for (let j = 0; j < data.length; j++) {
       let link
-      try {
+      // try {
         let base_link
         link, base_link = await get_url(page, data[j].pID)
 
@@ -62,7 +62,7 @@ async function fetch_url() {
 
           let i = 0
           while (true) {
-            try {
+            // try {
               // 加载10次，失败就退出
               if (i == 10) {
                 break
@@ -74,19 +74,19 @@ async function fetch_url() {
               if (link) {
                 break
               }
-            } catch (error) {
-              continue
-            }
+            // } catch (error) {
+            //   continue
+            // }
           }
         }
 
         if (!link) {
           continue
         }
-      } catch (error) {
-        await close_browser(browser)
-        throw new Error("链接获取失败")
-      }
+      // } catch (error) {
+      //   await close_browser(browser)
+      //   throw new Error("链接获取失败")
+      // }
       console.log("正在写入节目:" + data[j].name)
       // 写入分类数据
       fs.appendFile(path, data[j].name + "," + link, error => {
