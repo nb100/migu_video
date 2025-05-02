@@ -18,19 +18,16 @@ async function get_page(browser) {
 async function get_url(page, video_id) {
   let url = ""
   let base_url = ""
-  // base_url.push("测试")
-  page.on("requestfinished", request => {
-    if (request.url().startsWith("https://hlszymgsplive.miguvideo.com/")) {
-      console.log("1")
-      url = request.url()
-    }
-    if (request.url().startsWith("https://h5live.gslb.cmvideo.cn/")) {
-      console.log(2)
-      base_url = request.url()
-    }
-  })
+  url = await page.waitForResponse(
+    resp =>
+      resp.request().url().startsWith("https://hlszymgsplive.miguvideo.com/")
+  )
+  base_url = await page.waitForResponse(
+    resp =>
+      resp.request().url().startsWith("https://h5live.gslb.cmvideo.cn/")
+  )
   await page.goto('https://m.miguvideo.com/m/liveDetail/' + video_id, { waitUntil: "networkidle2" });
-  return url, base_url
+  return url.request().url(), base_url.request().url()
 }
 
 // 关闭浏览器

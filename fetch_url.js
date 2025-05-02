@@ -58,10 +58,16 @@ async function fetch_url() {
         let base_link
         link, base_link = await get_url(page, data[j].pID)
 
-        if (!link && base_link != "") {
+        if (!link && base_link.length >= 1) {
 
+          let i = 0
           while (true) {
             try {
+              // 加载10次，失败就退出
+              if (i == 10) {
+                break
+              }
+              i++
               link = await fetch(base_link, {
                 method: "GET"
               }).then(res => res.text())
