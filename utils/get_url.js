@@ -21,9 +21,11 @@ async function get_url(page, video_id) {
   // base_url.push("测试")
   page.on("requestfinished", request => {
     if (request.url().startsWith("https://hlszymgsplive.miguvideo.com/")) {
+      console.log("1")
       url = request.url()
     }
     if (request.url().startsWith("https://h5live.gslb.cmvideo.cn/")) {
+      console.log(2)
       base_url = request.url()
     }
   })
