@@ -74,7 +74,7 @@ async function fetch_url() {
               if (link) {
                 break
               }
-            // } catch (error) {
+            // } catchr(error) {
             //   continue
             // }
           }
