@@ -53,11 +53,13 @@ async function fetch_url() {
 
     let data = datas[i].dataList
     for (let j = 0; j < data.length; j++) {
+      console.log("正在准备节目")
       let link
       // try {
         let base_link
         link, base_link = await get_url(page, data[j].pID)
 
+      console.log("获得完成")
         if (!link && base_link.length >= 1) {
 
           let i = 0
