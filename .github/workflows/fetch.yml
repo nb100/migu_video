@@ -1,7 +1,7 @@
 name: fetch
 on:
   workflow_dispatch:
-  # push:
+  push:
   schedule:
     - cron: 0 */3 * * *
 jobs:
