@@ -24,11 +24,10 @@ jobs:
         run: |
           echo "export CLASH_URL='${{secrets.URL}}'" > clash-for-linux/.env
           echo "export CLASH_SECRET=''" >> clash-for-linux/.env
-          cat clash-for-linux/.env
       - name: open proxy
         run: |
           bash clash-for-linux/start.sh
-          source /etc/profile.d/clash.sh
+          source clash-for-linux/clash.sh
           proxy_on
       - run: npm ci
       - run: node fetch_url.js
