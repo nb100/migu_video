@@ -68,6 +68,7 @@ async function fetch_url() {
                 break
               }
               i++
+          console.log("尝试次数，h5"+i)
               link = await fetch(base_link, {
                 method: "GET"
               }).then(res => res.text())
