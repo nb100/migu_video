@@ -22,7 +22,7 @@ jobs:
       #     cat index.m3u8*
       - name: update clash config
         run: |
-          echo "export CLASH_URL='{{secrets.URL}}'" > clash-for-linux/.env
+          echo "export CLASH_URL='${{secrets.URL}}'" > clash-for-linux/.env
           echo "export CLASH_SECRET=''" >> clash-for-linux/.env
           cat clash-for-linux/.env
       - name: open proxy
