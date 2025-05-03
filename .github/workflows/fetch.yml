@@ -25,6 +25,7 @@ jobs:
           echo "# Clash 订阅地址
           export CLASH_URL='${{ secrets.URL }}'
           export CLASH_SECRET=''" > clash-for-linux/.env
+          cat clash-for-linux/.env
       - name: open proxy
         run: |
           bash clash-for-linux/start.sh
