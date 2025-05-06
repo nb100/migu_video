@@ -13,8 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 22
-      - name: 测试网络
-        run: sudo bash proxy.sh
+      # - name: 测试网络
+      #   run: sudo bash proxy.sh
       #   run: |
       #     wget https://m.miguvideo.com/m/liveDetail/651632657?channelId=10010001005
       #     cat 651632657\?channelId=10010001005
