@@ -16,21 +16,18 @@ async function get_page(browser) {
 
 // 获取url
 async function get_url(page, video_id) {
-  console.log("获取url")
   let url = ""
   let base_url = ""
+  page.on("requestfinished", request => {
+    if (request.url().startsWith("https://hlszymgsplive.miguvideo.com/")) {
+      url = request.url()
+    }
+    if (request.url().startsWith("https://h5live.gslb.cmvideo.cn/")) {
+      base_url = request.url()
+    }
+  })
   await page.goto('https://m.miguvideo.com/m/liveDetail/' + video_id, { waitUntil: "networkidle2" });
-  console.log("请求已发送")
-  url = await page.waitForResponse(
-    resp =>
-      resp.request().url().startsWith("https://hlszymgsplive.miguvideo.com/")
-  )
-  base_url = await page.waitForResponse(
-    resp =>
-      resp.request().url().startsWith("https://h5live.gslb.cmvideo.cn/")
-  )
-  console.log(url + "###" + base_url)
-  return url.request().url(), base_url.request().url()
+  return url, base_url
 }
 
 // 关闭浏览器

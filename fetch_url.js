@@ -56,36 +56,19 @@ async function fetch_url() {
       console.log("正在准备节目")
       let link
       // try {
-        let base_link
-        link, base_link = await get_url(page, data[j].pID)
+      let base_link
+      link, base_link = await get_url(page, data[j].pID)
 
-      console.log("获得完成")
-        if (!link && base_link.length >= 1) {
+      if (!link && base_link.length >= 1) {
 
-          let i = 0
-          while (true) {
-            // try {
-              // 加载10次，失败就退出
-              if (i == 10) {
-                break
-              }
-              i++
-          console.log("尝试次数，h5"+i)
-              link = await fetch(base_link, {
-                method: "GET"
-              }).then(res => res.text())
-              if (link) {
-                break
-              }
-            // } catchr(error) {
-            //   continue
-            // }
-          }
-        }
+        link = await fetch(base_link, {
+          method: "GET"
+        }).then(res => res.text())
+      }
 
-        if (!link) {
-          continue
-        }
+      if (!link) {
+        continue
+      }
       // } catch (error) {
       //   await close_browser(browser)
       //   throw new Error("链接获取失败")
