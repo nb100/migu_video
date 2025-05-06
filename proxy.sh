@@ -15,7 +15,8 @@ echo "bind []:8888" >>/etc/smartdns/smartdns.conf
 echo "# 指定上游服务器" >>/etc/smartdns/smartdns.conf
 echo "server 1.1.1.1" >>/etc/smartdns/smartdns.conf
 echo "server-tls 8.8.8.8" >>/etc/smartdns/smartdns.conf
-
+apt-cache search libssl
+ldd /usr/sbin/smartdns
 # 启动服务
 systemctl enable smartdns
 
