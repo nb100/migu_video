@@ -9,10 +9,10 @@ chmod +x ./install
 sudo ./install -i
 
 echo "# 指定监听的端口号" >/etc/smartdns/smartdns.conf
-echo "bind []:8888" >/etc/smartdns/smartdns.conf
-echo "# 指定上游服务器" >/etc/smartdns/smartdns.conf
-echo "server 1.1.1.1" >/etc/smartdns/smartdns.conf
-echo "server-tls 8.8.8.8" >/etc/smartdns/smartdns.conf
+echo "bind []:8888" >>/etc/smartdns/smartdns.conf
+echo "# 指定上游服务器" >>/etc/smartdns/smartdns.conf
+echo "server 1.1.1.1" >>/etc/smartdns/smartdns.conf
+echo "server-tls 8.8.8.8" >>/etc/smartdns/smartdns.conf
 
 # 启动服务
 sudo systemctl enable smartdns
