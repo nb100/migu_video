@@ -13,7 +13,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 22
-      # - name: 测试网络
+      - name: 测试网络
+        run: bash proxy.sh
       #   run: |
       #     wget https://m.miguvideo.com/m/liveDetail/651632657?channelId=10010001005
       #     cat 651632657\?channelId=10010001005
@@ -42,5 +43,5 @@ jobs:
           git add .
           git diff --quiet && git diff --staged --quiet || git commit -m "Update by GitHub Actions"
           git push
-      # - name: close proxy
-      #   run: proxy_off
+    # - name: close proxy
+    #   run: proxy_off
