@@ -55,7 +55,7 @@ async function fetch_url() {
     for (let j = 0; j < data.length; j++) {
       console.log("正在准备节目")
       let link
-      // try {
+      try {
       let base_link
       link, base_link = await get_url(page, data[j].pID)
 
@@ -69,10 +69,10 @@ async function fetch_url() {
       if (!link) {
         continue
       }
-      // } catch (error) {
-      //   await close_browser(browser)
-      //   throw new Error("链接获取失败")
-      // }
+      } catch (error) {
+        await close_browser(browser)
+        throw new Error("链接获取失败")
+      }
       console.log("正在写入节目:" + data[j].name)
       // 写入分类数据
       fs.appendFile(path, data[j].name + "," + link, error => {
