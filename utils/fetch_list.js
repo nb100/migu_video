@@ -1,17 +1,18 @@
 import axios from "axios"
+import { ProxyAgent } from "proxy-agent";
 
-axios.interceptors.request.use(function (config) {
-  console.log('请求参数信息：', config);
-  return config;
-}, error => {
-  console.log('发送错误：', error);
-  return Promise.reject(error);
-});
+// 设置代理服务器和虚拟IP地址
+const proxy = new ProxyAgent()
+const virtualIP = '10.77.8.254';
 // 获取分类集合
 async function cate_list() {
 
   try {
-    let resp = await axios.get("https://program-sc.miguvideo.com/live/v2/tv-data/a5f78af9d160418eb679a6dd0429c920")
+    const instance = axios.create({
+      httpAgent: proxy,
+      httpsAgent: proxy
+    });
+    let resp = await instance.get("https://program-sc.miguvideo.com/live/v2/tv-data/a5f78af9d160418eb679a6dd0429c920")
     let liveList = resp.data.body.liveList
     // 印象天下没有内容
     liveList = liveList.filter((item) => {
@@ -45,7 +46,7 @@ async function getUrlInfo(contId) {
 
     let resp = await axios.get(`https://webapi.miguvideo.com/gateway/playurl/v2/play/playurlh5?contId=${contId}&rateType=3&startPlay=true&xh265=false&channelId=0131_200300220100002`, {
       headers: {
-        "Accept-Language": "zh-cn",
+        "X-Forwarded-For": virtualIP
       }
     })
     // console.log(resp.data.body.urlInfo.url)
