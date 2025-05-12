@@ -44,7 +44,11 @@ async function data_list() {
 async function getUrlInfo(contId) {
   try {
 
-    let resp = await axios.get(`https://webapi.miguvideo.com/gateway/playurl/v2/play/playurlh5?contId=${contId}&rateType=3&startPlay=true&xh265=false&channelId=0131_200300220100002`, {
+    const instance = axios.create({
+      httpAgent: proxy,
+      httpsAgent: proxy
+    });
+    let resp = await instance.get(`https://webapi.miguvideo.com/gateway/playurl/v2/play/playurlh5?contId=${contId}&rateType=3&startPlay=true&xh265=false&channelId=0131_200300220100002`, {
       headers: {
         "X-Forwarded-For": virtualIP
       }
