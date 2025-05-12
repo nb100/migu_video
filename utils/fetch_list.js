@@ -1,5 +1,12 @@
 import axios from "axios"
 
+axios.interceptors.request.use(function (config) {
+  console.log('请求参数信息：', config);
+  return config;
+}, error => {
+  console.log('发送错误：', error);
+  return Promise.reject(error);
+});
 // 获取分类集合
 async function cate_list() {
 
