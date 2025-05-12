@@ -38,6 +38,7 @@ async function getUrlInfo(contId) {
 
     let resp = await axios.get(`https://webapi.miguvideo.com/gateway/playurl/v2/play/playurlh5?contId=${contId}&rateType=3&startPlay=true&xh265=false&channelId=0131_200300220100002`)
     // console.log(resp.data.body.urlInfo.url)
+    console.log(resp.data)
     if (resp.data?.body?.urlInfo?.url) {
       return resp.data.body.urlInfo.url
     }

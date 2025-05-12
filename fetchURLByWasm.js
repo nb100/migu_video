@@ -55,6 +55,7 @@ async function fetch_url() {
     for (let j = 0; j < data.length; j++) {
       console.log("正在准备节目")
       let link
+      console.log(data[j].pID)
       try {
         let url = await getUrlInfo(data[j].pID)
         if (url == "") {
