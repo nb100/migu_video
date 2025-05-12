@@ -45,7 +45,7 @@ async function getUrlInfo(contId) {
 
     let resp = await axios.get(`https://webapi.miguvideo.com/gateway/playurl/v2/play/playurlh5?contId=${contId}&rateType=3&startPlay=true&xh265=false&channelId=0131_200300220100002`, {
       headers: {
-        'X-Forwarded-For': '10.77.8.254'  // 伪造 IP 地址
+        "Accept-Language": "zh-cn",
       }
     })
     // console.log(resp.data.body.urlInfo.url)
