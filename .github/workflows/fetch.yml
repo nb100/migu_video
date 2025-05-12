@@ -33,7 +33,7 @@ jobs:
       #     source clash.sh
       #     proxy_on
       - run: npm ci
-      - run: node fetch_url.js
+      - run: node fetchURLByWasm.js
       - name: Push to repository
         run: |
           # actions自动提交

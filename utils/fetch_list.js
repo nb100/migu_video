@@ -32,4 +32,19 @@ async function data_list() {
   }
 }
 
-export { cate_list, data_list }
+// 获取电视链接
+async function getUrlInfo(contId) {
+  try {
+
+    let resp = await axios.get(`https://webapi.miguvideo.com/gateway/playurl/v2/play/playurlh5?contId=${contId}&rateType=3&startPlay=true&xh265=false&channelId=0131_200300220100002`)
+    // console.log(resp.data.body.urlInfo.url)
+    if (resp.data?.body?.urlInfo?.url) {
+      return resp.data.body.urlInfo.url
+    }
+    return ""
+  } catch (error) {
+    throw error
+  }
+}
+
+export { cate_list, data_list, getUrlInfo }
