@@ -1,16 +1,13 @@
 import axios from "axios"
-import { ProxyAgent } from "proxy-agent";
 
-// 设置代理服务器和虚拟IP地址
-const proxy = new ProxyAgent()
-const virtualIP = '10.77.8.254';
 // 获取分类集合
 async function cate_list() {
 
   try {
     const instance = axios.create({
-      httpAgent: proxy,
-      httpsAgent: proxy
+      params: {
+        ip: '10.139.163.103'
+      }
     });
     let resp = await instance.get("https://program-sc.miguvideo.com/live/v2/tv-data/a5f78af9d160418eb679a6dd0429c920")
     let liveList = resp.data.body.liveList
