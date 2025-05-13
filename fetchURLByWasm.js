@@ -56,7 +56,7 @@ async function fetch_url() {
       console.log("正在准备节目")
       let link
       // console.log(data[j].pID)
-      try {
+      // try {
         let url = await getUrlInfo(data[j].pID)
         if (url == "") {
           console.log("节目调整")
@@ -70,9 +70,9 @@ async function fetch_url() {
         if (!link) {
           continue
         }
-      } catch (error) {
-        throw new Error("链接获取失败")
-      }
+      // } catch (error) {
+      //   throw new Error("链接获取失败")
+      // }
       console.log("正在写入节目:" + data[j].name)
       // 写入分类数据
       fs.appendFile(path, data[j].name + "," + link + "\n", error => {
