@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/interface",
-      "destination": "/interface.txt"
-    }
-  ]
-}

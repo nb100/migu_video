@@ -1,7 +1,6 @@
-
 import fs from "fs"
 import { data_list, getUrlInfo } from "./utils/fetch_list.js"
-import { getEncryptURL, init_wasm } from "./get_ddCalcu_url.js"
+import { getEncryptURL, init_wasm } from "./utils/get_ddCalcu_url.js"
 
 function delay(ms) {
   return new Promise(resolve => {
@@ -57,19 +56,19 @@ async function fetch_url() {
       let link
       // console.log(data[j].pID)
       // try {
-        let url = await getUrlInfo(data[j].pID)
-        if (url == "") {
-          console.log("节目调整")
-          continue
-        }
-        link = getEncryptURL(exports, url)
-        // link = await fetch(base_link, {
-        //   method: "GET"
-        // }).then(res => res.text())
+      let url = await getUrlInfo(data[j].pID)
+      if (url == "") {
+        console.log("节目调整")
+        continue
+      }
+      link = getEncryptURL(exports, url)
+      // link = await fetch(base_link, {
+      //   method: "GET"
+      // }).then(res => res.text())
 
-        if (!link) {
-          continue
-        }
+      if (!link) {
+        continue
+      }
       // } catch (error) {
       //   throw new Error("链接获取失败")
       // }

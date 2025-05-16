@@ -56,19 +56,19 @@ async function fetch_url() {
       console.log("正在准备节目")
       let link
       try {
-      let base_link
-      link, base_link = await get_url(page, data[j].pID)
+        let base_link
+        link, base_link = await get_url(page, data[j].pID)
 
-      if (!link && base_link.length >= 1) {
+        if (!link && base_link.length >= 1) {
 
-        link = await fetch(base_link, {
-          method: "GET"
-        }).then(res => res.text())
-      }
+          link = await fetch(base_link, {
+            method: "GET"
+          }).then(res => res.text())
+        }
 
-      if (!link) {
-        continue
-      }
+        if (!link) {
+          continue
+        }
       } catch (error) {
         await close_browser(browser)
         throw new Error("链接获取失败")
