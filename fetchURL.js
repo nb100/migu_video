@@ -1,6 +1,6 @@
 import fs from "fs"
-import { data_list } from "./utils/fetch_list.js"
-import { close_browser, get_browser, get_page, get_url } from "./utils/get_url.js"
+import { data_list } from "./utils/fetchList.js"
+import { close_browser, get_browser, get_page, get_url } from "./utils/getURL.js"
 
 function delay(ms) {
   return new Promise(resolve => {

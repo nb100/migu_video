@@ -1,6 +1,6 @@
 import fs from "fs"
-import { data_list, getUrlInfo } from "./utils/fetch_list.js"
-import { getEncryptURL, init_wasm } from "./utils/get_ddCalcu_url.js"
+import { data_list, getUrlInfo } from "./utils/fetchList.js"
+import { getEncryptURL, init_wasm } from "./utils/getddCalcuURL.js"
 
 function delay(ms) {
   return new Promise(resolve => {
