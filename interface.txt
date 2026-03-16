@@ -1,5 +1,5 @@
 #EXTM3U x-tvg-url="https://gh-proxy.com/https://raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml,https://hk.gh-proxy.org/raw.githubusercontent.com/develop202/migu_video/refs/heads/main/playback.xml,https://develop202.github.io/migu_video/playback.xml,https://raw.githubusercontents.com/develop202/migu_video/refs/heads/main/playback.xml" catchup="append" catchup-source="&playbackbegin=${(b)yyyyMMddHHmmss}&playbackend=${(e)yyyyMMddHHmmss}"
-#EXTINF:-1 tvg-id="CCTV1综合" tvg-name="CCTV1综合" tvg-logo="" group-title="央视频道",更新日期: 2026-3-16 12:07:48
+#EXTINF:-1 tvg-id="CCTV1综合" tvg-name="CCTV1综合" tvg-logo="" group-title="央视频道",更新日期: 2026-3-17 06:48:30
 http://play.kankanlive.com/live/1698234869325962.m3u8
 #EXTINF:-1 tvg-id="CCTV1综合" tvg-name="CCTV1综合" tvg-logo="" group-title="央视频道",CCTV1综合
 http://play.kankanlive.com/live/1698234869325962.m3u8
@@ -41,6 +41,8 @@ https://hlsbkmgsplive.miguvideo.com/envivo_x/2018/SD/chongqing/1000/01.m3u8?&Hls
 https://hlsbkmgsplive.miguvideo.com/envivo_v/2018/SD/jilin/1000/01.m3u8?&HlsSubType=&encrypt=
 #EXTINF:-1 tvg-id="兵团卫视" tvg-name="兵团卫视" tvg-logo="" group-title="卫视频道",兵团卫视
 https://hlsbkmgsplive.miguvideo.com/migu/kailu/btws/51/20250804/01.m3u8?&HlsSubType=&encrypt=
+#EXTINF:-1 tvg-id="广东民生" tvg-name="广东民生" tvg-logo="" group-title="广东地区",广东民生
+http://183.11.239.36:808/hls/18/index.m3u8
 #EXTINF:-1 tvg-id="广东移动" tvg-name="广东移动" tvg-logo="" group-title="广东地区",广东移动
 http://183.11.239.36:808/hls/14/index.m3u8
 #EXTINF:-1 tvg-id="广东少儿" tvg-name="广东少儿" tvg-logo="" group-title="广东地区",广东少儿
@@ -147,6 +149,8 @@ http://l.cztvcloud.com/channels/lantian/SXxinchang1/720p.m3u8
 http://l.cztvcloud.com/channels/lantian/SXpinghu1/720p.m3u8
 #EXTINF:-1 tvg-id="平湖民生休闲" tvg-name="平湖民生休闲" tvg-logo="" group-title="浙江地区",平湖民生休闲
 http://l.cztvcloud.com/channels/lantian/SXpinghu2/720p.m3u8
+#EXTINF:-1 tvg-id="湖州公共频道" tvg-name="湖州公共频道" tvg-logo="" group-title="浙江地区",湖州公共频道
+http://hzcm-live.media.hugd.com/1e6b554b9ab74513958c0e1ffe664d22/9acaa7634309494cb29a85eb12136607.m3u8?auth_key=2272900830-9a2389b8bf4e49d580d4ad807423d326-0-ea78a5c7a678c436263582d368f5009e
 #EXTINF:-1 tvg-id="青田电视台" tvg-name="青田电视台" tvg-logo="" group-title="浙江地区",青田电视台
 http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8
 #EXTINF:-1 tvg-id="余姚新闻综合" tvg-name="余姚新闻综合" tvg-logo="" group-title="浙江地区",余姚新闻综合
@@ -261,6 +265,12 @@ http://live.ynurl.com/video/s10020-ystv-zb/index.m3u8
 http://live.ynurl.com/video/s10060-XCTV/index.m3u8
 #EXTINF:-1 tvg-id="马关县电视台" tvg-name="马关县电视台" tvg-logo="" group-title="云南地区",马关县电视台
 http://live.ynurl.com/video/s10046-001/index.m3u8
+#EXTINF:-1 tvg-id="麻栗坡电视台" tvg-name="麻栗坡电视台" tvg-logo="" group-title="云南地区",麻栗坡电视台
+http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel18/playlist.m3u8
+#EXTINF:-1 tvg-id="丘北县电视台" tvg-name="丘北县电视台" tvg-logo="" group-title="云南地区",丘北县电视台
+http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel14/playlist.m3u8
+#EXTINF:-1 tvg-id="广南县电视台" tvg-name="广南县电视台" tvg-logo="" group-title="云南地区",广南县电视台
+http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel19/playlist.m3u8
 #EXTINF:-1 tvg-id="广南县电视台" tvg-name="广南县电视台" tvg-logo="" group-title="云南地区",广南县电视台
 http://live.ynurl.com/video/s10031-gnxgbds/index.m3u8
 #EXTINF:-1 tvg-id="芒市综合" tvg-name="芒市综合" tvg-logo="" group-title="云南地区",芒市综合
@@ -623,7 +633,3 @@ http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02O
 http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8
 #EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="" group-title="超清频道",浙江卫视4K
 http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="" group-title="超清频道",浙江卫视4K
-http://play-qukan.cztv.com/live/1758879019692345.m3u8
-#EXTINF:-1 tvg-id="浙江卫视4K" tvg-name="浙江卫视4K" tvg-logo="" group-title="超清频道",浙江卫视4K
-https://play-qukan.cztv.com/live/1758879019692345.m3u8
