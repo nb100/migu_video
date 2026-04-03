@@ -1,5 +1,5 @@
 央视频道,#genre#
-更新日期: 2026-4-3 06:12:45,http://play.kankanlive.com/live/1698234869325962.m3u8
+更新日期: 2026-4-3 09:23:51,http://play.kankanlive.com/live/1698234869325962.m3u8
 CCTV1综合,http://play.kankanlive.com/live/1698234869325962.m3u8
 CCTV13新闻,http://pull-hls-f11.douyincdn.com/media/stream-695579599148417708.m3u8?arch_hrchy=w1&exp_hrchy=w1&expire=1775651827&major_anchor_level=common&sign=25aa61acbb8c946b2ee9ebd23cb4f905&t_id=037-202604012037061F5AB8029BCE7A81E5C7-0wCcv3
 CCTV13新闻,http://pull-hls-f11.douyincdn.com/media/stream-695553383939179180.m3u8?arch_hrchy=w1&exp_hrchy=w1&expire=1775651921&major_anchor_level=common&sign=0f3e5eb58649c980acb45c230fbd212e&t_id=037-20260401203840F95EAF06830CA99FC12D-5ue7Hg
@@ -22,9 +22,9 @@ CCTV16奥林匹克,http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testp
 吉林卫视,https://hlsbkmgsplive.miguvideo.com/envivo_v/2018/SD/jilin/1000/01.m3u8?&HlsSubType=&encrypt=
 兵团卫视,https://hlsbkmgsplive.miguvideo.com/migu/kailu/btws/51/20250804/01.m3u8?&HlsSubType=&encrypt=
 广东地区,#genre#
-广东民生,http://183.11.239.36:808/hls/18/index.m3u8
+广东移动,http://183.11.239.36:808/hls/14/index.m3u8
+广东体育,http://120.238.85.131:9901/tsfile/live/1013_1.m3u8?key=txiptv&playlive=0&authid=0
 广东少儿,http://120.238.85.131:9901/tsfile/live/1018_1.m3u8?key=txiptv&playlive=0&authid=0
-广东少儿,http://183.11.239.36:808/hls/175/index.m3u8
 广东影视,https://hlsbkmgsplive.miguvideo.com/wd_r1/2018/nfmedia/nfys/1000/01.m3u8?&HlsSubType=&encrypt=
 广东影视,http://120.238.85.131:9901/tsfile/live/1017_1.m3u8?key=txiptv&playlive=0&authid=0
 广东4K超高清,http://183.11.239.36:808/hls/9/index.m3u8
@@ -91,10 +91,6 @@ CCTV16奥林匹克,http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testp
 龙泉电视台,http://l.cztvcloud.com/channels/lantian/SXlongquan1/720p.m3u8
 江苏地区,#genre#
 南京少儿,http://nklive.nbs.cn/hls/e0981f3f-1a20-4a59-b8d1-17feb83a4610/index.m3u8
-镇江新闻综合,http://zjtv-wshls.homecdn.com/live/2aa50.m3u8
-镇江2,http://zjtv-wshls.homecdn.com/live/2aa16.m3u8
-句容党建频道,http://jrlive.jrntv.com:80/live/dangjian/playlist.m3u8
-宜兴新闻综合,http://yixing-tv-ori-hls.jstv.com/yixing-tv-ori/yixing_xw.m3u8
 黑龙江地区,#genre#
 哈尔滨新闻综合,https://rmplive.hljtv.com/live/haerbin.m3u8
 哈尔滨新闻综合,https://stream.hrbtv.net/xwzh/sd/live.m3u8
@@ -144,7 +140,6 @@ CCTV16奥林匹克,http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testp
 砚山县电视台,http://live.ynurl.com/video/s10020-ystv-zb/index.m3u8
 西畴县电视台,http://live.ynurl.com/video/s10060-XCTV/index.m3u8
 马关县电视台,http://live.ynurl.com/video/s10046-001/index.m3u8
-广南县电视台,http://m3u8.channel.wsrtv.com.cn/cms/videos/nmip-media/channellive/channel19/playlist.m3u8
 广南县电视台,http://live.ynurl.com/video/s10031-gnxgbds/index.m3u8
 芒市综合,http://live.ynurl.com/video/s10001-mstv1/index.m3u8
 盈江综合,http://live.ynurl.com/video/s10016-yjtv1hd/index.m3u8
@@ -163,6 +158,8 @@ CCTV16奥林匹克,http://38.75.136.137:98/gslb/dsdqpub/cctv16hd.m3u8?auth=testp
 济源综合,http://live.dxhmt.cn:9081/tv/19001-1.m3u8
 兰考综合,http://tvpull.dxhmt.cn:9081/tv/10225-1.m3u8
 兰考综合,http://live.dxhmt.cn:9081/tv/10225-1.m3u8
+洛阳科教,http://devlivepull.migucloud.com/live/A2HVH5BQ_C0.flv
+洛阳文旅,http://devlivepull.migucloud.com/live/Q081CD54_C0.flv
 伊川综合,http://tvpull.dxhmt.cn:9081/tv/10329-1.m3u8
 伊川综合,http://live.dxhmt.cn:9081/tv/10329-1.m3u8
 长垣综合,http://tvpull.dxhmt.cn:9081/tv/10728-1.m3u8
